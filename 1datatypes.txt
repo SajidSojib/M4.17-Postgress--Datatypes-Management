@@ -21,4 +21,13 @@
 * Character
     a. CHAR(n)              n bytes         fixed n length
     b. VARCHAR(n)           variable        up to n character
-    c. TEXT                 variable        unlimited          
+    c. TEXT                 variable        unlimited    
+
+
+* Date / Time
+    a. DATE             '1980-12-20', '12-Dec-1980', 'Dec-20-1980' (all pattern)
+    b. TIME             '14:30:00'
+    c. TIMETZ           '14:30:00+06'
+    d. TIMESTAMP        '2025-12-16 14:30:00'
+    d. TIMESTAMPTZ      '2025-12-16 14:30:00+06'
+    e. INTERVAL         '3 days 4hours'
