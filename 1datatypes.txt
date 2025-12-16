@@ -3,3 +3,15 @@
         Boolean, Numbers, Date/Time, Character, UUID
     Rarely Used
         Binary, Json, Array, XML
+
+
+* Boolean -> true, false, null (if field is empty)
+
+* Integer
+    a. SMALLINT             2 byte     -32768 to +32767
+    b. INTEGER              4 byte     -2B to +2B
+    c. BIGINT               8 byte      -9Q to +9Q
+    d. REAL(float)          4 byte       6 decimal
+    e. DOUBLE PRECISION     8 byte      15 decimal
+    f. NUMERIC / DECIMAL    variable    user-defiend (exact)
+    g. SERIAL               4 byte      auto increment
