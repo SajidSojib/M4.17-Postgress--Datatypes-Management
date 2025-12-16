@@ -7,11 +7,18 @@
 
 * Boolean -> true, false, null (if field is empty)
 
+
 * Integer
-    a. SMALLINT             2 byte     -32768 to +32767
-    b. INTEGER              4 byte     -2B to +2B
-    c. BIGINT               8 byte      -9Q to +9Q
-    d. REAL(float)          4 byte       6 decimal
-    e. DOUBLE PRECISION     8 byte      15 decimal
-    f. NUMERIC / DECIMAL    variable    user-defiend (exact)
-    g. SERIAL               4 byte      auto increment
+    a. SMALLINT             2 byte          -32768 to +32767
+    b. INTEGER              4 byte          -2B to +2B
+    c. BIGINT               8 byte          -9Q to +9Q
+    d. REAL(float)          4 byte           6 decimal
+    e. DOUBLE PRECISION     8 byte          15 decimal
+    f. NUMERIC / DECIMAL    variable        user-defiend (exact)
+    g. SERIAL               4 byte          auto increment 1 to 2.1B
+
+
+* Character
+    a. CHAR(n)              n bytes         fixed n length
+    b. VARCHAR(n)           variable        up to n character
+    c. TEXT                 variable        unlimited          
