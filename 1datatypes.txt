@@ -1,0 +1,5 @@
+* All data types
+    Most Used
+        Boolean, Numbers, Date/Time, Character, UUID
+    Rarely Used
+        Binary, Json, Array, XML
