@@ -19,9 +19,31 @@
 
 * Table with Constrains
     create table students(
-        id serial primary key,
+        id serial primary key,          
         name varchar(50) not null,
         email varchar(100) unique,
         age smallint check (age >= 18),
         isActive varchar(10) default 'active'
     );
+    create table students(                          different approch
+        id serial,          
+        name varchar(50) not null,
+        email varchar(100),
+        age smallint check (age >= 18),
+        isActive varchar(10) default 'active',
+        primary key (id),
+        unique(email,name)                          combination or name and email must be unique
+    );
+
+
+-- single row insert (has to fill all field and count serial)
+insert into students (id, name, email, age, isActive) values (1, 'sajid', 'sajid4@gmail.com', 20, 'inactive');
+
+-- multi row insert
+insert into students (name, email, age) values ('maruf', 'maruf@gmail.com', 20),('maruf', 'maruf2@gmail.com', 20);
+                                                
+-- without collumn list insert (fill all fields in order of table creation and count serial)
+insert into students values (10, 'tanvir', 'tanvir@gmail.com', 20, 'inactive'); 
+
+-- best option
+insert into students (name, email, age) values ('ratul', 'ratul@gmail.com', 20);
