@@ -7,13 +7,21 @@
 * Table Creation & Deletion
 
     create table students (
-    id serial,
-    name varchar(50),
-    age smallint,
-    isActive boolean,
-    dob date
+        id serial,
+        name varchar(50),
+        age smallint,
+        isActive boolean,
+        dob date
     );
 
     drop table if exists students;      (it handles not existing error)
 
 
+* Table with Constrains
+    create table students(
+        id serial primary key,
+        name varchar(50) not null,
+        email varchar(100) unique,
+        age smallint check (age >= 18),
+        isActive varchar(10) default 'active'
+    );
