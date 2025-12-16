@@ -1,0 +1,17 @@
+* Database Creation & Deletion
+
+    create database school;
+    drop database school;
+
+
+* Table Creation & Deletion
+
+    create table students (
+    id serial,
+    name varchar(50),
+    age smallint,
+    isActive boolean,
+    dob date
+    );
+
+    drop table if exists students;      (it handles not existing error)
