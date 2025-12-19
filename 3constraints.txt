@@ -1,0 +1,11 @@
+* NOT NULL
+
+* UNIQUE
+
+* PRIMARY KEY  (unique + not null)
+
+* REFERENCES table-name(collumn-name)       Foreign Key(must exist in another table)
+
+* DEFAULT 'value' -> if value not given then set value
+
+* CHECK     checks a condition

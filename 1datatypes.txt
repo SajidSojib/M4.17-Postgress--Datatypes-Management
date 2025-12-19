@@ -14,7 +14,7 @@
     c. BIGINT               8 byte          -9Q to +9Q
     d. REAL(float)          4 byte           6 decimal
     e. DOUBLE PRECISION     8 byte          15 decimal
-    f. NUMERIC / DECIMAL    variable        user-defiend (exact)
+    f. NUMERIC / DECIMAL    variable        user-defiend (exact) -> NUMERIC(10,2) -> 10 digit
     g. SERIAL               4 byte          auto increment 1 to 2.1B
 
 
