@@ -10,6 +10,9 @@
 
 🔗 4.17 postgres datatypes & management: https://drive.google.com/file/d/1zPLUb2mSC4w2cT7YIV8jGYi5RWK__-q-/view
 
+
+🔗 Practice Repo: https://github.com/Apollo-Level2-Web-Dev/postgreSQL_query_task
+
 ### **1. Data Types** ✅
 #### **Most Used:**
 - **Boolean**: `true`, `false`, `null` (when field is empty)
